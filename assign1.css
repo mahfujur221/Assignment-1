@@ -1,0 +1,75 @@
+body > header > nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+body > header > nav > ul > li > a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 10px;
+}
+body > header > nav > ul > li > button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: white;
+  color: #006a50;
+  border: 1px solid;
+  border-color: #006a50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 604.44px;
+  width: 1280px;
+  background-color: #c6e4d6;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card1-para{
+  font-size:  24px;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #0E0E0E;
+}
+
+.card1-head{
+    font-size: 56px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0E0E0E;
+    margin-bottom: 20px;
+}
+
+.card1-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    border-color: #006A50;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.card1-img {
+  height: 444px;
+  width: 474px;
+  border-radius: 10px;
+  margin-right: 5px;
+  padding-right: 5px;
+}
