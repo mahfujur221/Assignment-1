@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans";
+}
+
+body {
+    background: linear-gradient(135deg, #F5F5F5 60%, #C6E4D6 100%);
+    min-height: 100vh;
+}
+
+header>nav {
+    padding: 1rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+header>nav>button {
+    background-color: transparent;
+    text-align: center;
+    border: 1.5px solid #006A50;
+    color: #006A50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(84, 144, 245, 0.08);
+}
+
+header>nav>button:hover {
+    background: linear-gradient(90deg, #09A15C 0%, #5490F5 100%);
+    color: #FFF;
+    box-shadow: 0 4px 16px rgba(84, 144, 245, 0.18);
+}
+
+.explore {
+    background-color: #006A50;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(84, 144, 245, 0.08);
+}
+
+.explore:hover, .btn:hover {
+    background: linear-gradient(90deg, #09A15C 0%, #5490F5 100%);
+    color: #FFF;
+    box-shadow: 0 4px 16px rgba(84, 144, 245, 0.18);
+}
+
+.hero-section {
+    margin: 0 8rem;
+    padding: 3.2rem;
+    border-radius: 24px;
+    background: #C6E4D6;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-part1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hero-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.hero-part2>img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+.hero-part2>img:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.hero-text {
+    color: rgba(14, 14, 14, 0.50);
+    font-weight: 500;
+}
+
+.hero-title {
+    color: #0E0E0E;
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-family: "Poppins", "Fira Sans", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(84, 144, 245, 0.08);
+}
+
+.btn {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(84, 144, 245, 0.08);
+}
+
+.pillar-section {
+    margin: 3.5rem 8rem;
+    animation: fadeInUp 1s ease;
+}
+
+.cards {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0 8px 32px rgba(84, 144, 245, 0.08), 0 1.5px 8px rgba(14, 14, 14, 0.05);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.card:hover {
+    box-shadow: 0 12px 40px rgba(84, 144, 245, 0.18), 0 2px 12px rgba(14, 14, 14, 0.10);
+    transform: translateY(-4px) scale(1.03);
+    background: #C6E4D6;
+}
+.card img {
+    transition: transform 0.3s;
+}
+.card:hover img {
+    transform: scale(1.15) rotate(-8deg);
+}
+
+.card-text {
+    color: rgba(14, 14, 14, 0.70);
+    font-family: "Fira Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.future-vision {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 8rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease;
+}
+
+.vision-card {
+    flex: 1;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(84, 144, 245, 0.08), 0 1.5px 8px rgba(14, 14, 14, 0.05);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.vision-card:hover {
+    box-shadow: 0 12px 40px rgba(84, 144, 245, 0.18), 0 2px 12px rgba(14, 14, 14, 0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+.vision-card img {
+    transition: transform 0.3s;
+}
+.vision-card:hover img {
+    transform: scale(1.15) rotate(-8deg);
+}
+
+.blue {
+    border: 0px solid #5490F5;
+    background: rgba(84, 144, 245, 0.20);
+}
+
+.green {
+    border: 0px solid #09A15C;
+    background: #C6E4D6;
+}
+
+.yellow {
+    border: 0px solid #FFC239;
+    background: #F7EBCF;
+}
+
+.ble {
+    background: #5490F5;
+}
+
+.grn {
+    background: #09A15C;
+}
+
+.ylw {
+    background: #FFC239;
+}
+
+.younus {
+    margin: 0 8rem;
+    padding: 2rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background: white;
+    box-shadow: 0 8px 32px rgba(84, 144, 245, 0.08), 0 1.5px 8px rgba(14, 14, 14, 0.05);
+    animation: fadeInUp 1s ease;
+}
+
+.younus-inner {
+    background: url('assets/quote-bg.png') left top no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.table-box {
+    background: linear-gradient(90deg, #FFF 80%, #C6E4D6 100%);
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(84, 144, 245, 0.08);
+    animation: fadeInUp 1s ease;
+}
+
+table {
+    width: 100%;
+    font-weight: 600;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 24px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    background: #C6E4D6;
+    text-align: start;
+}
+
+.dp {
+    text-align: center;
+}
+
+.agree {
+    border-radius: 4px;
+    border: 1px solid #0E0E0E;
+    background: #C6E4D6;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.recent-news {
+    border-radius: 24px;
+    background-color: #FFF;
+    padding: 2rem;
+    gap: 2rem;
+    display: flex;
+    box-shadow: 0 8px 32px rgba(84, 144, 245, 0.08), 0 1.5px 8px rgba(14, 14, 14, 0.05);
+    transition: box-shadow 0.3s, transform 0.3s;
+    animation: fadeInUp 1s ease;
+}
+.recent-news:hover {
+    box-shadow: 0 12px 40px rgba(84, 144, 245, 0.18), 0 2px 12px rgba(14, 14, 14, 0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.news-img {
+    width: 40%;
+    border-radius: 24px;
+}
+
+.news-img>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+.news-img>img:hover {
+    transform: scale(1.08) rotate(-4deg);
+}
+
+.news-area {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.ne {
+    font-size: 0.8rem;
+}
+
+.neb {
+    font-size: 0.8rem;
+}
+
+.newsbox2 {
+    flex-direction: row-reverse;
+}
+
+.donate {
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+.donate .cards .card>p {
+    color: rgba(14, 14, 14, 0.80);
+    font-family: "Fira Sans";
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.crd:hover {
+    background: #C6E4D6;
+}
+
+.donate>input {
+    width: 75%;
+    padding: 20px 40px;
+    outline: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+    background: #FFF;
+}
+
+.news-letter {
+    padding: 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #C6E4D6 60%, #5490F5 100%);
+    color: #0E0E0E;
+    box-shadow: 0 8px 32px rgba(84, 144, 245, 0.08);
+    animation: fadeInUp 1s ease;
+}
+.email{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 24px;
+}
+.email>input{
+    border-radius: 8px 0 0 8px ;
+    border: none;
+    outline: none;
+    padding: 18px 40px;
+    width: 60%;
+}
+.bt{
+    border-radius: 0px 8px 8px 0px;
+}
+footer{
+    padding:50px 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(90deg, #C6E4D6 60%, #FFF 100%);
+    color: #006A50;
+    box-shadow: 0 -4px 16px rgba(84, 144, 245, 0.08);
+}
+hr{
+    border: 1px solid rgba(14, 14, 14, 0.10);
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+.icons img:hover {
+    transform: scale(1.2) rotate(-8deg);
+}
+
+h1, h3 {
+    font-family: "Poppins", "Fira Sans", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(84, 144, 245, 0.08);
+}
+h1 {
+    font-size: 2.5rem;
+    color: #006A50;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.3rem;
+    color: #5490F5;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 1200px) {
+    header>nav, .hero-section, .pillar-section, .future-vision, .younus {
+        margin: 0 2rem;
+        padding: 2rem;
+    }
+    footer {
+        padding: 30px 2rem;
+    }
+}
+@media (max-width: 800px) {
+    .hero-section, .cards, .recent-news, .newsbox2 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-part1, .hero-part2, .news-img, .news-area {
+        width: 100%;
+    }
+    .pillar-section, .future-vision, .younus, .donate, .news-letter {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    footer {
+        padding: 20px 1rem;
+    }
+}
+
+/* Remove the old button:hover to avoid conflict */
+button:hover{
+    /* background: red; */
+}/*  */
